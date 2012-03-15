@@ -1,0 +1,13 @@
+%a{:href=>"", :id=>"poster">POST my data packet!
+
+:javascript
+$(document).ready(function(){
+	$('#poster').click(function(){
+		$.post(
+			"JohnQuarto.com", 
+			{ name: "John", time: "2pm" },
+		    function(data) {
+		    	alert("Data Loaded: " + data);
+			});
+	});
+});

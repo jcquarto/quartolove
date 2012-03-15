@@ -1,0 +1,1 @@
+This is a super-tiny Rails app to respond to railslove.de via join-railslove.herokuapp.com via a POST to /join
