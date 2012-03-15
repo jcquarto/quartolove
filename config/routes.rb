@@ -1,6 +1,7 @@
 Quartolove::Application.routes.draw do
   get "pages/index"
-
+  post "pages/post"
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
