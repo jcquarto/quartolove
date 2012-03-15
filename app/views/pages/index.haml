@@ -5,8 +5,9 @@
 	$(document).ready(function(){
 		$('#poster').click(function(e){
 			e.preventDefault();
+			// to test just have the url be '/pages/post'
 			$.post(
-				"/pages/post", 
+				"http://join_railslove.herokuapp.com", 
 				{ 
 					"message": "You should hire John Quarto-vonTivadar",
 					"why": "Because he's super smart",
@@ -17,7 +18,8 @@
 					"or email": "john@johnquarto.com",
 					"or skype": "jcquarto",
 					"or his personal website": "www.johnquarto.com",
-					"wow, how lucky Railslove would be to hire him": "Everyone agrees :)" 
+					"wow, how lucky Railslove would be to hire him": "Everyone agrees! :)",
+					"where is this bozo from?": "Austin, Texas, y'all!"
 				},
 				{contentType: 'application/json'}
 			);
